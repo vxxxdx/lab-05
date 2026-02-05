@@ -5,10 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
@@ -35,6 +39,8 @@ public class CityArrayAdapter extends ArrayAdapter<City> {
 
         movieName.setText(city.getName());
         movieYear.setText(city.getProvince());
+
+
 
         return view;
     }
